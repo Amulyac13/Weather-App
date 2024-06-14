@@ -1,0 +1,95 @@
+.card{
+    width: 90%; /*The width CSS property sets an element's width according to that box.*/
+    max-width: 470px; /*The max-width property defines the maximum width of an element.If the content is larger than the maximum width, it will automatically change the height of the element.*/
+    background: linear-gradient(135deg,#00feba,#5b548a);/*The linear-gradient() function creates an image consisting of a progressive transition between two or more colors along a straight line.*/
+    /*You can also set a starting point and a direction (or an angle) along with the gradient effect.*/
+    color: white; /*text color*/
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px; /*space inside the card */
+    text-align: center; /*The text-align property specifies the alignment of text in an element.*/
+}
+.search{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 0;
+    outline: 0;/*An outline is a line drawn outside the element's border.*/
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    border-radius: 50%; /*border-radius 50% means circle*/
+    width: 60px;
+    height:60px;
+    cursor: pointer;
+}
+.search button img{
+    width: 20px;
+}
+.weather-icon{
+    width: 200px;
+    margin: 50px;
+    margin-bottom: 0px;
+}
+.weather h1{
+    margin-top: 20px;
+    font-size: 88px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    /* margin-top: 0 20px; */
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    margin-top: -6px;
+    font-weight: bold;
+    /* justify-content: space-evenly; */
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 4px;
+}
+.col p{
+    margin: 4px;
+    text-align: left;
+}
+#h,#w{
+    font-size: 20px;
+    margin-top: -6px;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    /* display only when user fill wrong city name in the search bar else not display. */
+    display: none;
+}
